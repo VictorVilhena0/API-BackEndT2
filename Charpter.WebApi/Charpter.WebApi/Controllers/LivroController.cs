@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Charpter.WebApi.Repositories;
+using Charpter.WebApi.Models;
 
 namespace Charpter.WebApi.Controllers
 {
@@ -28,8 +29,71 @@ namespace Charpter.WebApi.Controllers
             {
                 throw new Exception(e.Message);
             }
+        }
 
-            return Ok();
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(int id)
+        {
+            try
+            {
+                Livro livroBuscado = _livroRepository.BuscarPorId(id);
+
+                if (livroBuscado == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(livroBuscado);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Cadastrar(Livro livro)
+        {
+            try
+            {
+                _livroRepository.Cadastrar(livro);
+
+                return StatusCode(201);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Cadastrar(int id, Livro livro)
+        {
+            try
+            {
+                _livroRepository.Atualizar(id, livro);
+
+                return StatusCode(204);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Deletar(int id)
+        {
+            try
+            {
+                _livroRepository.Deletar(id);
+
+                return Ok("Livro deletado");
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }

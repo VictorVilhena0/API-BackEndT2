@@ -5,6 +5,11 @@
       "ProjectGuid": "58e64262-f127-48c8-8f3a-be0ad5906880",
       "DisplayName": "Charpter.WebApi",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1

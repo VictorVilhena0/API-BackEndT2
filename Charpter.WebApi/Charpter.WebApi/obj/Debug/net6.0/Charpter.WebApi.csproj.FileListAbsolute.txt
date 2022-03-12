@@ -53,3 +53,8 @@ C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\obj\
 C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\obj\Debug\net6.0\ref\Charpter.WebApi.dll
 C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\obj\Debug\net6.0\Charpter.WebApi.pdb
 C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\obj\Debug\net6.0\Charpter.WebApi.genruntimeconfig.cache
+C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\obj\Debug\net6.0\Charpter.WebApi.MvcApplicationPartsAssemblyInfo.cs

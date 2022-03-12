@@ -6,7 +6,7 @@ namespace Charpter.WebApi.Contexts
     public class CharpterContext : DbContext
     {
         public CharpterContext()
-        { 
+        {
         }
 
         public CharpterContext(DbContextOptions<CharpterContext> options) : base(options)
