@@ -1,6 +1,7 @@
 using Charpter.WebApi.Contexts;
 using Charpter.WebApi.Interfaces;
 using Charpter.WebApi.Repositories;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,24 @@ builder.Services.AddCors(o =>
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Version = "v1", Title = "CharpterWebApi"});
+});
+
+builder.Services.AddAuthentication(o =>
+{
+    o.DefaultChallengeScheme = "JwtBearer";
+    o.DefaultAuthenticateScheme = "JwtBearer";
+}).AddJwtBearer("JwtBearer", o =>
+{
+    o.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("bomba-nuclear-autorizacao")),
+        ClockSkew = TimeSpan.FromMinutes(60),
+        ValidIssuer = "charpter.webapi",
+        ValidAudience = "charpter.webapi"
+    };
 });
 
 builder.Services.AddScoped<CharpterContext, CharpterContext>();
@@ -52,6 +71,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseCors("CorsPolicy");
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

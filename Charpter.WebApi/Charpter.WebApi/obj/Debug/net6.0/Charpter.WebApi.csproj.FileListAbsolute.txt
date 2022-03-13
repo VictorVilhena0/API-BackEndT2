@@ -58,3 +58,4 @@ C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\bin\
 C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\obj\Debug\net6.0\Charpter.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\victo\Documents\Trabalhos\Códigos\Charpter.WebApi\Charpter.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
