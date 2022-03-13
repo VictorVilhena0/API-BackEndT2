@@ -1,10 +1,21 @@
 using Charpter.WebApi.Contexts;
+using Charpter.WebApi.Interfaces;
 using Charpter.WebApi.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+builder.Services.AddCors(o =>
+{
+    o.AddPolicy("CorsPolicy", builder =>
+    {
+        builder.WithOrigins("http://localhost:4000")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -14,6 +25,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<CharpterContext, CharpterContext>();
 
 builder.Services.AddTransient<LivroRepository, LivroRepository>();
+
+builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
 var app = builder.Build();
 
@@ -38,8 +51,13 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseCors("CorsPolicy");
+
 app.UseAuthorization();
 
-app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+app.UseEndpoints(endpoints =>
+ {
+     endpoints.MapControllers();
+ });
 
 app.Run();
