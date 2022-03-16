@@ -69,7 +69,7 @@ namespace Charpter.WebApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Cadastrar(int id, Livro livro)
+        public IActionResult Atualizar(int id, Livro livro)
         {
             try
             {
