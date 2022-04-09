@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mlu1GdYOHOJc2ZQEENsMoDIliTi7c8by8Nf+7D5xUPs/gmkDa64lz7FaghG0iFUrJ2zP5DByVRNpKrWJ4/ylmQ==",
+  "dgSpecHash": "3aC7m+7Ba4z4cOQs5LpQwPpKIQPBSycytjpumoYdtb79DjPypePht+7NvFYoS/aLneHLCU7SZ5HuOBi8XSAF0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Documents\\Trabalhos\\Códigos\\Charpter.WebApi\\Charpter.WebApi\\Charpter.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\victo\\Documents\\Trabalhos\\Códigos\\API-BackEndT2\\Charpter.WebApi\\Charpter.WebApi\\Charpter.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.3\\microsoft.aspnetcore.authentication.jwtbearer.6.0.3.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -2011,11 +2011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\victo\\Documents\\Trabalhos\\Códigos\\Charpter.WebApi\\Charpter.WebApi\\Charpter.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\victo\\Documents\\Trabalhos\\Códigos\\API-BackEndT2\\Charpter.WebApi\\Charpter.WebApi\\Charpter.WebApi.csproj",
       "projectName": "Charpter.WebApi",
-      "projectPath": "C:\\Users\\victo\\Documents\\Trabalhos\\Códigos\\Charpter.WebApi\\Charpter.WebApi\\Charpter.WebApi.csproj",
+      "projectPath": "C:\\Users\\victo\\Documents\\Trabalhos\\Códigos\\API-BackEndT2\\Charpter.WebApi\\Charpter.WebApi\\Charpter.WebApi.csproj",
       "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\victo\\Documents\\Trabalhos\\Códigos\\Charpter.WebApi\\Charpter.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\victo\\Documents\\Trabalhos\\Códigos\\API-BackEndT2\\Charpter.WebApi\\Charpter.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",

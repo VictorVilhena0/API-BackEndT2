@@ -10,7 +10,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Arquivos Diversos",
       "ColorIndex": -1
+    },
+    "ea6f5908-8990-4c9d-8f67-46c0ab0a50b6": {
+      "ProjectGuid": "ea6f5908-8990-4c9d-8f67-46c0ab0a50b6",
+      "DisplayName": "TestXUnit",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
